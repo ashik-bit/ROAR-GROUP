@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071018">
+<meta name="description" content="ROAR GROUP — Driven by Excellence. Construction, Engineering, Procurement, Supply, Infrastructure, International Trade, Agro, IT and Business Consultancy.">
+<title>ROAR GROUP — Driven by Excellence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#05090d; --bg2:#09121a; --card:rgba(14,25,34,.72); --line:rgba(255,255,255,.09);
+  --text:#f3f7f8; --muted:#93a6af; --accent:#c8ff3d; --accent2:#71e6c4;
+  --shadow:0 25px 80px rgba(0,0,0,.42); --radius:24px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:
+radial-gradient(circle at 75% 5%,rgba(113,230,196,.09),transparent 25%),
+radial-gradient(circle at 10% 30%,rgba(200,255,61,.05),transparent 24%),var(--bg);
+color:var(--text);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+.container{width:min(1240px,92vw);margin:auto}
+.noise{position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");z-index:99}
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 0;background:linear-gradient(to bottom,rgba(5,9,13,.88),transparent);backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:Manrope;font-weight:800;letter-spacing:-.07em;font-size:26px;display:flex;align-items:center;gap:10px}
+.logo-mark{width:28px;height:28px;border:2px solid var(--accent);border-radius:8px;display:grid;place-items:center;transform:rotate(45deg)}
+.logo-mark i{width:9px;height:9px;background:var(--accent);display:block;border-radius:2px}
+.navlinks{display:flex;gap:28px;color:#b9c6ca;font-size:14px}
+.navlinks a:hover{color:#fff}
+.nav-cta{padding:11px 17px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);font-size:13px}
+.nav-cta:hover{border-color:rgba(200,255,61,.4);color:var(--accent)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 90px;position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:70px 70px;mask-image:linear-gradient(to bottom,black,transparent 80%)}
+.hero-photo{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 8%,rgba(5,9,13,.78) 48%,rgba(5,9,13,.2)),linear-gradient(0deg,var(--bg),transparent 55%),url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2200&q=85") center/cover;opacity:.42}
+.hero-content{position:relative;z-index:2;max-width:930px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.035);font-size:12px;color:#b9c6ca;letter-spacing:.12em;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}
+h1{font-family:Manrope;font-size:clamp(64px,9.6vw,145px);line-height:.86;letter-spacing:-.085em;margin:27px 0 26px;font-weight:800}
+.h1-accent{color:var(--accent)}
+.hero-copy{max-width:720px;color:#b4c1c6;font-size:clamp(16px,2vw,20px);line-height:1.65}
+.hero-copy b{color:#f3f7f8}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{padding:14px 20px;border-radius:999px;border:1px solid var(--line);display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:14px;transition:.25s}
+.btn-primary{background:var(--accent);color:#0a1008;border-color:var(--accent)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 35px rgba(200,255,61,.2)}
+.btn-ghost:hover{background:rgba(255,255,255,.06)}
+.hero-bottom{margin-top:72px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--line);background:var(--line);border-radius:18px;overflow:hidden;max-width:850px}
+.stat{background:rgba(7,15,21,.78);padding:18px 20px}
+.stat strong{font-family:Manrope;font-size:22px;display:block}.stat span{font-size:11px;color:var(--muted);margin-top:4px;display:block;text-transform:uppercase;letter-spacing:.08em}
+.section{padding:120px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+.kicker{color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:700;margin-bottom:12px}
+h2{font-family:Manrope;font-size:clamp(38px,5vw,70px);letter-spacing:-.065em;line-height:.95}
+.section-intro{max-width:430px;color:var(--muted);line-height:1.65}
+.sectors{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sector{min-height:290px;position:relative;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#0a1219;cursor:pointer;transition:.35s}
+.sector:hover{transform:translateY(-7px);border-color:rgba(200,255,61,.32);box-shadow:var(--shadow)}
+.sector-img{position:absolute;inset:0;background-position:center;background-size:cover;filter:saturate(.65);transition:.5s}
+.sector:hover .sector-img{transform:scale(1.06);filter:saturate(.85)}
+.sector::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 15%,rgba(3,7,10,.88) 92%)}
+.sector-content{position:absolute;z-index:2;left:20px;right:20px;bottom:20px}
+.num{font-size:11px;color:var(--accent);letter-spacing:.12em;margin-bottom:10px}
+.sector h3{font-family:Manrope;font-size:21px;letter-spacing:-.035em;margin-bottom:7px}
+.sector p{font-size:12px;line-height:1.5;color:#aebdc2}
+.arrow{position:absolute;right:20px;top:20px;width:34px;height:34px;border:1px solid rgba(255,255,255,.15);border-radius:50%;display:grid;place-items:center;z-index:3;color:var(--accent);font-size:15px}
+.capabilities{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+.big-card,.cap-list{border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(18,32,42,.9),rgba(8,15,21,.9));overflow:hidden}
+.big-card{min-height:600px;position:relative;padding:40px;display:flex;align-items:end}
+.big-card::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,7,10,.96),rgba(3,7,10,.05)),url("https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1400&q=80") center/cover;opacity:.72}
+.big-content{position:relative;max-width:590px}
+.big-content h3{font-family:Manrope;font-size:42px;line-height:1;letter-spacing:-.055em;margin-bottom:15px}
+.big-content p{color:#aebdc2;line-height:1.65}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.pill{font-size:11px;padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05)}
+.cap-list{padding:14px}
+.cap-item{padding:25px 22px;border-bottom:1px solid var(--line);display:flex;gap:18px;align-items:flex-start}.cap-item:last-child{border-bottom:0}
+.cap-icon{width:40px;height:40px;border-radius:12px;background:rgba(200,255,61,.08);border:1px solid rgba(200,255,61,.16);display:grid;place-items:center;color:var(--accent);flex:none}
+.cap-item h4{font-family:Manrope;font-size:17px;margin-bottom:5px}.cap-item p{font-size:12px;color:var(--muted);line-height:1.55}
+.trade-banner{border:1px solid var(--line);border-radius:30px;min-height:420px;overflow:hidden;position:relative;background:url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1800&q=85") center/cover}
+.trade-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,8,12,.97) 0%,rgba(3,8,12,.72) 48%,rgba(3,8,12,.2))}
+.trade-content{position:relative;z-index:2;padding:60px;max-width:650px}.trade-content h2{font-size:clamp(40px,5vw,68px)}.trade-content p{color:#b2c0c5;line-height:1.7;margin:20px 0 25px}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}.area{padding:17px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}.area b{display:block;font-family:Manrope;margin-bottom:5px}.area span{font-size:12px;color:var(--muted)}
+.quote{padding:120px 0}.quote-box{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:70px 0;display:grid;grid-template-columns:1fr 1fr;gap:60px}.quote-text{font-family:Manrope;font-size:clamp(34px,4.5vw,64px);line-height:1.02;letter-spacing:-.06em}.quote-text em{color:var(--accent);font-style:normal}.quote-side{color:var(--muted);line-height:1.8;align-self:end}
+footer{border-top:1px solid var(--line);padding:55px 0 30px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:35px}.footer-brand p{color:var(--muted);font-size:13px;line-height:1.6;max-width:300px;margin-top:14px}.footer-col h5{font-size:11px;color:#fff;text-transform:uppercase;letter-spacing:.14em;margin-bottom:15px}.footer-col a{display:block;color:var(--muted);font-size:13px;margin:9px 0}.footer-col a:hover{color:var(--accent)}.copyright{border-top:1px solid var(--line);margin-top:45px;padding-top:20px;color:#607078;font-size:11px;display:flex;justify-content:space-between}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(18px);z-index:80;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{width:min(850px,96vw);max-height:90vh;overflow:auto;border:1px solid rgba(255,255,255,.12);border-radius:28px;background:#091219;box-shadow:0 40px 120px rgba(0,0,0,.7);position:relative}.modal-img{height:270px;background:center/cover}.modal-body{padding:34px}.modal-body h3{font-family:Manrope;font-size:40px;letter-spacing:-.05em;margin-bottom:10px}.modal-body p{color:#aebdc2;line-height:1.7}.modal-body ul{margin:22px 0 0 18px;color:#c4d0d4;line-height:1.9}.close{position:absolute;right:18px;top:18px;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(0,0,0,.5);color:white;z-index:2;cursor:pointer;font-size:20px}
+.reveal{opacity:0;transform:translateY(25px);transition:.75s}.reveal.show{opacity:1;transform:none}
+@media(max-width:1000px){.sectors{grid-template-columns:repeat(2,1fr)}.capabilities{grid-template-columns:1fr}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.navlinks{display:none}.hero{padding-top:120px}.hero-bottom{grid-template-columns:repeat(2,1fr)}.section{padding:80px 0}.section-head,.quote-box{grid-template-columns:1fr;display:grid}.sectors{grid-template-columns:1fr}.areas{grid-template-columns:1fr}.trade-content{padding:35px}.big-card{min-height:500px;padding:28px}.big-content h3{font-size:35px}.footer-grid{grid-template-columns:1fr}.copyright{display:block;line-height:1.7}.copyright span{display:block;margin-top:7px}h1{font-size:clamp(60px,19vw,100px)}}
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#top"><span class="logo-mark"><i></i></span>ROAR<span style="color:var(--accent)">GROUP</span></a>
+    <nav class="navlinks">
+      <a href="#sectors">Sectors</a><a href="#capabilities">Capabilities</a><a href="#trade">International</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Start a conversation ↗</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-photo"></div><div class="hero-grid"></div>
+  <div class="container hero-content reveal">
+    <div class="eyebrow"><span class="dot"></span> Integrated business & project solutions</div>
+    <h1>BUILDING<br><span class="h1-accent">WHAT'S NEXT.</span></h1>
+    <p class="hero-copy"><b>ROAR GROUP</b> is a multi-sector business platform delivering procurement, supply chain, international trade, engineering, construction, agro, technology and consultancy solutions — connected by one standard: <b>excellence.</b></p>
+    <div class="actions"><a class="btn btn-primary" href="#sectors">Explore our sectors <span>↘</span></a><a class="btn btn-ghost" href="#capabilities">View capabilities</a></div>
+    <div class="hero-bottom">
+      <div class="stat"><strong>08</strong><span>Business divisions</span></div><div class="stat"><strong>360°</strong><span>Project support</span></div><div class="stat"><strong>B2B</strong><span>Enterprise focus</span></div><div class="stat"><strong>Global</strong><span>Trade mindset</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sectors">
+  <div class="container">
+    <div class="section-head reveal"><div><div class="kicker">01 / Business divisions</div><h2>One group.<br>Many capabilities.</h2></div><p class="section-intro">Explore the specialist divisions of ROAR GROUP. Select a sector to see its focus, services and delivery capabilities.</p></div>
+    <div class="sectors" id="sectorGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="capabilities">
+  <div class="container">
+    <div class="section-head reveal"><div><div class="kicker">02 / Core capabilities</div><h2>From scope<br>to completion.</h2></div><p class="section-intro">An integrated delivery model combining sourcing, technical expertise, project execution and operational support under one group.</p></div>
+    <div class="capabilities reveal">
+      <div class="big-card"><div class="big-content"><div class="kicker">Integrated delivery</div><h3>Engineering thinking. Commercial discipline. Field execution.</h3><p>We bring together construction, civil and engineering services with procurement, supply, logistics, technology and project management to help clients move complex projects forward.</p><div class="pills"><span class="pill">Procurement</span><span class="pill">Civil & Engineering</span><span class="pill">Infrastructure</span><span class="pill">Project Management</span><span class="pill">Supply Chain</span></div></div></div>
+      <div class="cap-list">
+        <div class="cap-item"><div class="cap-icon">01</div><div><h4>Construction & Civil Works</h4><p>Buildings, roads, bridges, culverts, river protection, dredging, renovation, repair and maintenance.</p></div></div>
+        <div class="cap-item"><div class="cap-icon">02</div><div><h4>Engineering & MEP Systems</h4><p>Fire fighting, electro-mechanical systems, substations, power systems, HVAC, elevators and escalators.</p></div></div>
+        <div class="cap-item"><div class="cap-icon">03</div><div><h4>Technical & Equipment Supply</h4><p>Generators, power backup, technical, laboratory, healthcare and IT equipment with sourcing support.</p></div></div>
+        <div class="cap-item"><div class="cap-icon">04</div><div><h4>Project Management</h4><p>Planning, coordination, procurement control, delivery monitoring and execution support across project lifecycles.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trade">
+<div class="container">
+  <div class="trade-banner reveal"><div class="trade-content"><div class="kicker">03 / International trade</div><h2>Connecting demand with opportunity.</h2><p>ROAR GROUP's international trade division supports export–import activities and cross-border sourcing, helping businesses access products, suppliers and markets with greater confidence.</p><a class="btn btn-primary" href="#contact">Discuss a trade requirement ↗</a></div></div>
+  <div class="areas reveal">
+    <div class="area"><b>Export–Import</b><span>Cross-border commercial support</span></div><div class="area"><b>Global Sourcing</b><span>Supplier discovery & procurement</span></div><div class="area"><b>Supply Chain</b><span>Logistics coordination & delivery</span></div>
+  </div>
+</div>
+</section>
+
+<section class="quote">
+<div class="container">
+  <div class="quote-box reveal">
+    <div class="quote-text">Driven by <em>Excellence</em><br>— শ্রেষ্ঠত্বের অনুপ্রেরণায় পরিচালিত</div>
+    <div class="quote-side">Our group is built around a simple idea: complex business requirements deserve coordinated, dependable and technically capable execution. ROAR GROUP connects people, products, projects and expertise to create measurable value.</div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="contact" style="padding-top:20px">
+<div class="container">
+  <div class="section-head reveal"><div><div class="kicker">04 / Let's work</div><h2>Have a project<br>in mind?</h2></div><p class="section-intro">Tell us what you need — procurement, construction, engineering, supply, trade, technology or project consultancy. We can shape the right delivery route.</p></div>
+  <div class="actions reveal"><a class="btn btn-primary" href="mailto:info@roargroup.com">info@roargroup.com ↗</a><a class="btn btn-ghost" href="tel:+880000000000">Call the group</a></div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="logo"><span class="logo-mark"><i></i></span>ROAR<span style="color:var(--accent)">GROUP</span></div><p>Construction • Engineering • Procurement • Supply • Infrastructure • Trade • Agro • IT • Consultancy</p></div>
+    <div class="footer-col"><h5>Business</h5><a href="#sectors">Supply & Procurement</a><a href="#sectors">Logistics & Supply Chain</a><a href="#sectors">International Trade</a><a href="#sectors">Engineering & Development</a></div>
+    <div class="footer-col"><h5>Solutions</h5><a href="#sectors">Construction & Infrastructure</a><a href="#sectors">Agro Industries</a><a href="#sectors">IT Solutions</a><a href="#sectors">Business Consultancy</a></div>
+    <div class="footer-col"><h5>Company</h5><a href="#top">About ROAR GROUP</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a><a href="#contact">Partner with us</a></div>
+  </div>
+  <div class="copyright"><span>© 2026 ROAR GROUP. All rights reserved.</span><span>Driven by Excellence — শ্রেষ্ঠত্বের অনুপ্রেরণায় পরিচালিত</span></div>
+</div>
+</footer>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="close" id="close">×</button><div class="modal-img" id="modalImg"></div><div class="modal-body"><div class="kicker" id="modalKicker"></div><h3 id="modalTitle"></h3><p id="modalDesc"></p><ul id="modalList"></ul></div></div></div>
+
+<script>
+const sectors=[
+ {n:"01",t:"ROAR Supply & Procurement Solutions",s:"Strategic sourcing, vendor coordination and reliable supply.",img:"https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80",d:"Procurement and supply solutions designed around quality, commercial value, delivery reliability and project requirements.",l:["Strategic sourcing & vendor management","Industrial and technical equipment supply","Procurement coordination & documentation","Project-based sourcing"]},
+ {n:"02",t:"ROAR Logistics & Supply Chain",s:"Moving products, materials and projects with control.",img:"https://images.unsplash.com/photo-1586528116493-da8a7f1b7c3f?auto=format&fit=crop&w=1000&q=80",d:"Integrated logistics and supply chain coordination for domestic and international movement of goods and project materials.",l:["Logistics coordination","Freight & shipment support","Warehouse and inventory coordination","Project material movement"]},
+ {n:"03",t:"ROAR International Trade",s:"Export–import and global sourcing opportunities.",img:"https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1000&q=80",d:"Cross-border trade support connecting buyers, suppliers and markets through structured export–import solutions.",l:["Export–import support","International sourcing","Commercial coordination","Market and supplier connectivity"]},
+ {n:"04",t:"ROAR Engineering & Development",s:"Technical expertise for complex development.",img:"https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80",d:"Engineering and development capabilities supporting infrastructure, MEP, technical systems and project delivery.",l:["Civil & structural engineering","Electro-mechanical systems","Power and substation systems","Technical project support"]},
+ {n:"05",t:"ROAR Construction & Infrastructure",s:"Building durable assets and critical infrastructure.",img:"https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80",d:"Construction, renovation, repair and maintenance across buildings, roads, bridges, culverts, river protection and related infrastructure.",l:["Building construction","Roads, bridges & culverts","River protection & dredging","Renovation, repair & maintenance"]},
+ {n:"06",t:"ROAR Agro Industries",s:"Agricultural solutions with commercial potential.",img:"https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1000&q=80",d:"Agro-business initiatives focused on agricultural products, value chains and scalable commercial opportunities.",l:["Agro product sourcing","Agricultural supply solutions","Value-chain opportunities","Commercial agro initiatives"]},
+ {n:"07",t:"ROAR IT Solutions",s:"Digital systems for modern business.",img:"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80",d:"Technology and digital solutions helping organizations modernize operations, information flow and customer experiences.",l:["Business software & systems","IT equipment & infrastructure","Digital transformation","Technology support"]},
+ {n:"08",t:"ROAR Business Consultancy Services",s:"Strategy, projects and business execution.",img:"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80",d:"Practical consultancy for business development, project planning, procurement strategy and operational execution.",l:["Business advisory","Project consultancy","Commercial planning","Operational improvement"]}
+];
+const grid=document.getElementById("sectorGrid");
+sectors.forEach((x,i)=>{
+ const el=document.createElement("article"); el.className="sector reveal"; el.innerHTML=`<div class="sector-img" style="background-image:url('${x.img}')"></div><div class="arrow">↗</div><div class="sector-content"><div class="num">${x.n} / ROAR DIVISION</div><h3>${x.t}</h3><p>${x.s}</p></div>`; el.onclick=()=>openModal(x); grid.appendChild(el);
+});
+function openModal(x){
+ document.getElementById("modalKicker").textContent=x.n+" / ROAR DIVISION";
+ document.getElementById("modalTitle").textContent=x.t;
+ document.getElementById("modalDesc").textContent=x.d;
+ document.getElementById("modalImg").style.backgroundImage=`url('${x.img}')`;
+ document.getElementById("modalList").innerHTML=x.l.map(v=>`<li>${v}</li>`).join("");
+ document.getElementById("modal").classList.add("open"); document.body.style.overflow="hidden";
+}
+function closeModal(){document.getElementById("modal").classList.remove("open");document.body.style.overflow=""}
+document.getElementById("close").onclick=closeModal;
+document.getElementById("modal").onclick=e=>{if(e.target.id==="modal")closeModal()};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
